@@ -1,6 +1,6 @@
 [user]
-	name = Michael Aderskog
-	email = michael.aderskog@gmail.com
+	name = $git_user_name
+	email = $git_user_email
 [core]
 	excludesfile = ~/.gitignore_global
 [alias]
