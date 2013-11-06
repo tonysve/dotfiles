@@ -13,6 +13,7 @@
 	dc = diff --cached
 	lg = log -p
 	who = shortlog -s --
+        cam = commit -a -m
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
