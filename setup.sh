@@ -11,3 +11,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/dotfiles/zs
 ln -nfs ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -nfs ~/dotfiles/zsh/oh-my-zsh ~/.oh-my-zsh
 
+# Setup for git
+
+ln -nfs ~/dotfiles/git/gitignore_global ~/.gitignore_global
+ln -nfs ~/dotfiles/git/gitconfig ~/.gitconfig
+

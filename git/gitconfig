@@ -1,0 +1,25 @@
+[user]
+	name = Michael Aderskog
+	email = michael.aderskog@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+[alias]
+	lol = log --oneline --graph --all --decorate
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	dc = diff --cached
+	lg = log -p
+	who = shortlog -s --
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[credential]
+	helper = osxkeychain
+[color]
+	ui = auto
