@@ -15,4 +15,4 @@ Planning to add:
 
 Still thinking about:
 * ssh
-
+* food and drinks
