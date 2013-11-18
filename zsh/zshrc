@@ -47,6 +47,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git lein gradle colored-man zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+source .bash_aliases
 
 alias json="underscore print --color"
 alias c="clear"
