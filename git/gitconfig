@@ -3,6 +3,7 @@
         path=~/.gitconfig-local
 [core]
 	excludesfile = ~/.gitignore_global
+	autocrlf = input
 [alias]
 	lol = log --oneline --graph --all --decorate
 	st = status
@@ -24,3 +25,6 @@
 	helper = osxkeychain
 [color]
 	ui = auto
+[user]
+	name = tonysve
+	email = tony@svedlund.com
