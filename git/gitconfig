@@ -26,5 +26,7 @@
 [color]
 	ui = auto
 [user]
-	name = tonysve
-	email = tony@svedlund.com
+	name = Tony Svedlund
+	email = tony.svedlund@tre.se
+[push]
+	default = simple

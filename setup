@@ -13,6 +13,9 @@ ln -nfs ~/dotfiles/zsh/oh-my-zsh ~/.oh-my-zsh
 
 # Setup for git
 
-ln -nfs ~/dotfiles/git/gitignore_global ~/.gitignore_global
-ln -nfs ~/dotfiles/git/gitconfig ~/.gitconfig
+#ln -nfs ~/dotfiles/git/gitignore_global ~/.gitignore_global
+#ln -nfs ~/dotfiles/git/gitconfig ~/.gitconfig
 
+
+ln -nfs ~/dotfiles/bash/bash_aliases ~/.bash_aliases
+ln -nfs ~/dotfiles/ssh/config ~/.ssh/config
