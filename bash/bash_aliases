@@ -1,0 +1,58 @@
+##Change JAVA aliases
+alias java6='export JAVA_HOME="/opt/java/jdk1.6.0_45"'
+alias java7='export JAVA_HOME="/opt/java/jdk1.7.0_40"'
+
+alias grails204='export GRAILS_HOME="/opt/grails-2.0.4"'
+alias grails232='export GRAILS_HOME="/opt/grails-2.3.2"'
+
+##Port forwarding
+#DBS
+alias Sesam3DBNXT="ssh -f -N -L 15211:x12013abd-vip:1521 sesam2.nxt"
+alias PSFTNXT="ssh -f -N -L 15411:x12294abd.nextrel.tre.se:1521 smart1.nxt"
+alias BHPR1-SALE="ssh -f -N -L 15311:x12020pbd-vip.omaccess.net:1521 sesam1.prd"
+alias BHPR2-OTHER_2="ssh -f -N -L 15511:x12022pbd-vip.omaccess.net:1521 smart1.prd"
+alias BHPR2-OTHER="ssh -f -N -L 15511:x12023pbd-vip.omaccess.net:1521 smart1.prd"
+alias BHAR1="ssh -f -N -L 15711:x12010abd-vip.nextrel.tre.se:1521 smart1.nr"
+alias BHAR1_2="ssh -f -N -L 15711:x12011abd-vip.nextrel.tre.se:1521 smart1.nr"
+alias BHAR2="ssh -f -N -L 15611:x12012abd-vip.nextrel.tre.se:1521 smart1.nr"
+alias BHAR2_2="ssh -f -N -L 15611:x12013abd-vip.nextrel.tre.se:1521 smart1.nr"
+
+#Weblogin Debug
+alias WebloginDebugInteractiveBT1="ssh -f -N -L 8008:localhost:8008 gab1.bt1"
+
+## From cygwin:
+alias cdslog='cd ~/dev/git/slog/'
+alias cdsm='cd ~/dev/git/smart-rest/'
+alias cdsms='cd ~/dev/git/smart-soap/'
+alias cdgit='cd ~/dev/git/'
+alias mci='mvn clean install'
+alias telnet='telnet -e%'
+alias NR='ssh xtonsve@AP_NR-BT.omaccess.net'
+alias PROD='ssh xtonsve@AP_PROD.omaccess.net'
+
+alias tunnelSmartSoap1902='ssh -g -N -f -L 1902:x1902azz:9100 smartsoap1.nr'
+alias tunnelSmartSoap1903='ssh -g -N -f -L 1903:x1903azz:9100 smartsoap2.nr'
+alias tunnelSmartSoap1925='ssh -g -N -f -L 1925:x1925pzz:9100 smartsoap1.prd'
+alias tunnelSmartSoap1926='ssh -g -N -f -L 1926:x1926pzz:9100 smartsoap2.prd'
+alias tunnelSmart1935='ssh -g -N -f -L 1935:x1935azz:8080 smart1.nr'
+alias tunnelSmart1936='ssh -g -N -f -L 1936:x1936azz:8080 smart2.nr'
+alias tunnelSmart1912='ssh -g -N -f -L 1912:x1912pzz:8080 smart1.prd'
+alias tunnelSmart1913='ssh -g -N -f -L 1913:x1913pzz:8080 smart2.prd'
+alias tunnelSmartAdmin3902='ssh -g -N -f -L 3902:x1902azz:8080 smartsoap1.nr'
+alias tunnelSmartAdmin3903='ssh -g -N -f -L 3903:x1903azz:8080 smartsoap2.nr'
+alias tunnelSmartAdmin3925='ssh -g -N -f -L 3925:x1925pzz:8080 smartsoap1.prd'
+alias tunnelSmartAdmin3926='ssh -g -N -f -L 3926:x1926pzz:8080 smartsoap2.prd'
+
+alias tunnelCFN3112='ssh -g -N -f -L 3112:10.40.45.151:6000 sesam2.prd'
+
+alias tunnel3Repair='ssh -g -N -f -L 3926:x1926pzz:8080 smartsoap2.prd'
+
+alias tunnelLDAP='ssh -f -N -L 11389:rodc01.omaccess.net:389 smartsoap1.nr'
+
+#alias tunnelSlog12913='ssh -g -N -f -L 12913:x12913azz:8080 slog1.nr'
+#alias tunnelSlog12914='ssh -g -N -f -L 12914:x12914azz:8080 slog2.nr'
+alias tunnelSlog12913='ssh -g -N -f -L 12913:172.23.130.113:8080 slog1.nr'
+alias tunnelSlog12914='ssh -g -N -f -L 12914:172.23.130.114:8080 slog2.nr'
+alias tunnelSlog12918='ssh -g -N -f -L 12918:x12918pzz:8080 slog1.prd'
+alias tunnelSlog12919='ssh -g -N -f -L 12919:x12919pzz:8080 slog2.prd'
+

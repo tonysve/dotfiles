@@ -1,0 +1,224 @@
+##############################################################################
+#
+# This ~/.ssh/config file simplifies the act of logging on to servers # protected behind bastion hosts. To really benefit from this you probably # want to set up public key authentication with the servers as well.
+#
+# Have fun,
+# Karl <karl.martinsson@tre.se>
+##############################################################################
+
+#Workaround for https://bugs.launchpad.net/openssh/+bug/84899/comments/54
+GSSAPIAuthentication no
+
+
+##############################################################################
+# Application Server Hosts
+#
+# This section defines all the application servers you want to access.
+# Each server typically has entries for the various environments, # possibly with specific User definitions for groups of servers. See # examples. The big idea here is to use symbolic easy to remember names # for your application server, append the environment (e.g. cte, bt1, nxt, # prd) to that, and then let the ssh configuration remember hostname, # username and possibly other configurations relevant to that specific # server.
+#
+# Bastion host forwarding happens automatically for hosts named *.nxt, *.bt1 # and *.prd thanks to ssh config Host name matching. See the "Bastion Hosts"
+# and "Proxy Definitions" sections below.
+#
+# Example :
+#
+# Host myapp.nxt
+# Hostname u1234tzz
+# User tomcat
+#
+# When you ssh to myapp.nxt, ssh will first find this definition and see # what the actual hostname is for myapp.nxt. Continuing the search # for Host matches, it will also find the definition for *.nxt and # adds a ProxyCommand. This ProxyCommand uses ssh (kind of recursively) to # log on to the nxt bastion host and forwards to the ssh port on the # destination server u1234tzz.
+#
+# NOTE! See the "Defaults" section at the very end of this file for defaults.
+#
+##############################################################################
+
+##############################################################################
+# GetAccess (Weblogin)
+# ############################################################################
+
+#BT1
+Host gaf1.bt1
+Hostname x12250tzz
+
+Host gab1.bt1
+Hostname x12251tzz
+
+Host php.bt1
+Hostname x12201tzz
+
+#NR
+Host gaf1.nxt
+Hostname x12390azz
+
+Host gaf2.nxt
+Hostname x12392azz
+
+Host gab1.nxt
+Hostname x12391azz
+
+Host gab2.nxt
+Hostname x12393azz
+
+#PROD
+Host gab1.prd
+Hostname x12436pzz
+
+Host gab2.prd
+Hostname x12437pzz
+
+Host gaf1.prd
+Hostname x12434pzz
+
+Host gaf2.prd
+Hostname x12435pzz
+
+##############################################################################
+# SESAM 3
+# ############################################################################
+
+Host sesam.bt1
+Hostname x12209tzz
+
+Host sesam1.nxt
+Hostname x12211azz
+
+Host sesam2.nxt
+Hostname x12218azz
+
+Host sesam1.prd
+Hostname x12558pzz
+
+Host sesam2.prd
+Hostname x12559pzz
+
+#Fatwire
+Host sesam3.prd
+Hostname x12560pzz
+
+#Staging
+Host sesam4.prd
+Hostname x12561pzz
+
+##############################################################################
+# SMART
+##############################################################################
+
+Host smart1.bt1
+Hostname x1833tzz
+
+Host smart1.nr
+Hostname x1935azz
+
+Host smart2.nr
+Hostname x1936azz
+
+Host smart1.prd
+Hostname x1912pzz
+
+Host smart2.prd
+Hostname x1913pzz
+
+Host smartsoap1.nr
+Hostname x1902azz
+
+Host smartsoap2.nr
+Hostname x1903azz
+
+Host smartsoap1.prd
+Hostname x1925pzz
+
+Host smartsoap2.prd
+Hostname x1926pzz
+
+Host slog1.prd
+Hostname x12918pzz
+ 
+Host slog2.prd
+Hostname x12919pzz
+
+Host slog1.nr
+#Hostname x12913azz
+Hostname 172.23.130.113
+
+Host slog2.nr
+#Hostname x12914azz
+Hostname 172.23.130.114
+
+##############################################################################
+# Other crap
+##############################################################################
+
+Host stash.prd
+Hostname x12664pzz
+
+Host online.prd
+Hostname x12678pzz
+User xtonsve
+
+Host central.prd
+Hostname x12059pzz
+
+##############################################################################
+# 3IS
+##############################################################################
+
+Host 3is.bt1
+Hostname x12184tzz
+User tibadmin
+
+##############################################################################
+# Iris (Notification system)
+##############################################################################
+
+Host iris.bt1
+Hostname x12829tzz
+
+#x12832azz 12833azz
+#x12834pzz 12835pzz
+
+##############################################################################
+# Bastion hosts
+##############################################################################
+
+Host bt1
+Hostname AP_NR-BT.omaccess.net
+User xtonsve
+
+Host nr
+Hostname AP_NR-BT.omaccess.net
+User xtonsve
+
+Host nxt
+Hostname AP_NR-BT.omaccess.net
+User xtonsve
+
+Host prd
+Hostname AP_PROD.omaccess.net
+User xtonsve
+
+##############################################################################
+# Proxy definitions
+##############################################################################
+
+# These definitions require ssh protocol version 2 for the -W # port forwarding feature. If you're stuck with version 1, use # netcat on bastion host: ProxyCommand ssh -qxT nxt bin/nc %h %p
+
+Host *.bt1
+ProxyCommand ssh -2 -W %h:%p bt1
+
+Host *.prd
+ProxyCommand ssh -2 -W %h:%p prd
+
+Host *.nextrel.tre.se *.nxt
+ProxyCommand ssh -2 -W %h:%p nxt
+
+Host *.nextrel.tre.se *.nr
+ProxyCommand ssh -2 -W %h:%p nr
+
+##############################################################################
+# Defaults
+##############################################################################
+
+Host *
+User appadm
+ExitOnForwardFailure yes
+
+#EOF
