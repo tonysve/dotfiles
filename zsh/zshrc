@@ -54,7 +54,7 @@ alias c="clear"
 alias diff="colordiff"
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/opt/grails-2.3.3/bin:/opt/java/jdk1.7.0_40:$PATH
+export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/opt/grails-2.3.5/bin:/opt/java/jdk1.7.0_40:$PATH
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 #[[ -s "/Users/michael/.gvm/bin/gvm-init.sh" ]] && source "/Users/michael/.gvm/bin/gvm-init.sh"

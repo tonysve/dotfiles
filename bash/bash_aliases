@@ -4,6 +4,7 @@ alias java7='export JAVA_HOME="/opt/java/jdk1.7.0_40"'
 
 alias grails204='export GRAILS_HOME="/opt/grails-2.0.4"'
 alias grails232='export GRAILS_HOME="/opt/grails-2.3.2"'
+alias grails235='export GRAILS_HOME="/opt/grails-2.3.5"'
 
 ##Port forwarding
 #DBS
@@ -16,11 +17,15 @@ alias BHAR1="ssh -f -N -L 15711:x12010abd-vip.nextrel.tre.se:1521 smart1.nr"
 alias BHAR1_2="ssh -f -N -L 15711:x12011abd-vip.nextrel.tre.se:1521 smart1.nr"
 alias BHAR2="ssh -f -N -L 15611:x12012abd-vip.nextrel.tre.se:1521 smart1.nr"
 alias BHAR2_2="ssh -f -N -L 15611:x12013abd-vip.nextrel.tre.se:1521 smart1.nr"
+alias SAS_CAMPAIGN="ssh -f -N -L 15811:x12473pbd.omaccess.net:1521 3is1.prd"
 
 #Weblogin Debug
 alias WebloginDebugInteractiveBT1="ssh -f -N -L 8008:localhost:8008 gab1.bt1"
+alias WebloginBT1InfrastructureDebug="ssh -f gab1.bt1 -L 8000:localhost:8000 -N"
+alias WebloginNRInfrastructureDebug="ssh -f gab1.nxt -L 8001:localhost:8000 -N"
 
 ## From cygwin:
+alias cdwl='cd ~/dev/git/weblogin/'
 alias cdslog='cd ~/dev/git/slog/'
 alias cdsm='cd ~/dev/git/smart-rest/'
 alias cdsms='cd ~/dev/git/smart-soap/'

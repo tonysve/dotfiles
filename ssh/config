@@ -165,6 +165,22 @@ Host 3is.bt1
 Hostname x12184tzz
 User tibadmin
 
+Host 3is1.nr
+Hostname x12185azz
+User tibadmin
+
+Host 3is2.nr
+Hostname x12186azz
+User tibadmin
+
+Host 3is1.prd
+Hostname x12188pzz
+User tibadmin
+
+Host 3is2.prd
+Hostname x12189pzz
+User tibadmin
+
 ##############################################################################
 # Iris (Notification system)
 ##############################################################################
