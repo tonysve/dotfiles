@@ -182,6 +182,52 @@ Hostname x12189pzz
 User tibadmin
 
 ##############################################################################
+# SNP
+##############################################################################
+
+Host snp.bt1
+Hostname x13077tzz
+User appadm
+
+Host snp1.nr
+Hostname x13078azz
+User appadm
+
+Host snp2.nr
+Hostname x13083azz
+User appadm
+
+Host snp1.prd
+Hostname x13082pzz
+User appadm
+
+Host snp2.prd
+Hostname x13081pzz
+User appadm
+
+##############################################################################
+# OSP
+##############################################################################
+
+Host osp1.nr
+Hostname x13111azz
+User appadm
+
+Host osp2.nr
+Hostname x13112azz
+User appadm
+
+Host osp1.prd
+Hostname x13113pzz
+User appadm
+
+Host osp2.prd
+Hostname x13114pzz
+User appadm
+
+
+
+##############################################################################
 # Iris (Notification system)
 ##############################################################################
 
