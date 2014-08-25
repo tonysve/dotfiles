@@ -112,10 +112,12 @@ Host smart2.nr
 Hostname x1936azz
 
 Host smart1.prd
-Hostname x1912pzz
+#Hostname x1912pzz
+Hostname x13066pzz
 
 Host smart2.prd
-Hostname x1913pzz
+#Hostname x1913pzz
+Hostname x13067pzz
 
 Host smartsoap1.nr
 Hostname x1902azz
@@ -156,6 +158,10 @@ User xtonsve
 
 Host central.prd
 Hostname x12059pzz
+
+Host tds.prd
+Hostname x12620pzz
+
 
 ##############################################################################
 # 3IS
@@ -206,7 +212,7 @@ Hostname x13081pzz
 User appadm
 
 ##############################################################################
-# OSP
+# OSP (outbound.tre.se)
 ##############################################################################
 
 Host osp1.nr
@@ -225,6 +231,33 @@ Host osp2.prd
 Hostname x13114pzz
 User appadm
 
+##############################################################################
+# ATF
+##############################################################################
+
+Host atfweb.nr
+Hostname x13000azz
+User appadm
+
+Host atfapi.nr
+Hostname x12999azz
+User appadm
+
+Host atfweb1.prd
+Hostname x13054pzz
+User appadm
+
+Host atfweb2.prd
+Hostname x13064pzz
+User appadm
+
+Host atfapi1.prd
+Hostname x13048pzz
+User appadm
+
+Host atfapi2.prd
+Hostname x13049pzz
+User appadm
 
 
 ##############################################################################
