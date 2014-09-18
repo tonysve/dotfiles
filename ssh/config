@@ -112,10 +112,12 @@ Host smart2.nr
 Hostname x1936azz
 
 Host smart1.prd
-Hostname x1912pzz
+#Hostname x1912pzz
+Hostname x13066pzz
 
 Host smart2.prd
-Hostname x1913pzz
+#Hostname x1913pzz
+Hostname x13067pzz
 
 Host smartsoap1.nr
 Hostname x1902azz
@@ -160,6 +162,10 @@ Hostname x12059pzz
 Host tds.prd
 Hostname x12620pzz
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 759049c48aa927b57ffc92877ebfc73c1595127b
 ##############################################################################
 # 3IS
 ##############################################################################
@@ -209,7 +215,7 @@ Hostname x13081pzz
 User appadm
 
 ##############################################################################
-# OSP
+# OSP (outbound.tre.se)
 ##############################################################################
 
 Host osp1.nr
@@ -229,6 +235,7 @@ Hostname x13114pzz
 User appadm
 
 ##############################################################################
+<<<<<<< HEAD
 # BINKS
 ##############################################################################
 
@@ -250,6 +257,33 @@ User appadm
 
 Host binks2.prd
 Hostname x13295pzz
+=======
+# ATF
+##############################################################################
+
+Host atfweb.nr
+Hostname x13000azz
+User appadm
+
+Host atfapi.nr
+Hostname x12999azz
+User appadm
+
+Host atfweb1.prd
+Hostname x13054pzz
+User appadm
+
+Host atfweb2.prd
+Hostname x13064pzz
+User appadm
+
+Host atfapi1.prd
+Hostname x13048pzz
+User appadm
+
+Host atfapi2.prd
+Hostname x13049pzz
+>>>>>>> 759049c48aa927b57ffc92877ebfc73c1595127b
 User appadm
 
 
