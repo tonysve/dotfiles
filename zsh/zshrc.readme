@@ -1,0 +1,4 @@
+## the softlink zshrc must exist in this folder.
+## create it for linux/mac respectively like this:
+## ln -s zshrc.linux zshrc
+## ln -s zshrc.osx zshrc
