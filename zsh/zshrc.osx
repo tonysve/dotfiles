@@ -54,8 +54,8 @@ alias c="clear"
 #alias diff="colordiff"
 
 # Customize to your needs...
-#export PATH=$PATH:/home/xtonsve/activator-1.2.1
-export PATH=$PATH:/home/xtonsve/activator-1.2.3
+#export PATH=$PATH:/home/xtonsve/activator-1.2.3
+export PATH=$PATH:/Users/tonysvedlund/dev/activator-1.2.10-minimal
 
 function setjdk() {  
   if [ $# -ne 0 ]; then  
@@ -70,7 +70,7 @@ function setjdk() {
  function removeFromPath() {  
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")  
  }
-setjdk 1.7
+setjdk 1.8
 
 
 

@@ -72,6 +72,43 @@ Host gaf2.prd
 Hostname x12435pzz
 
 ##############################################################################
+# Layer 7
+##############################################################################
+
+Host l7gw1.bt1
+Hostname x13457tzz
+User ssgconfig 
+
+Host l7gw2.bt1
+Hostname x13458tzz
+User ssgconfig 
+
+Host l7gw1.nr
+Hostname x13384azz
+User ssgconfig 
+
+Host l7gw2.nr
+Hostname x13385azz
+User ssgconfig 
+
+Host l7gw1.prd
+Hostname x13459pzz
+User ssgconfig 
+
+Host l7gw2.prd
+Hostname x13460pzz
+User ssgconfig 
+
+Host l7esm.prd
+Hostname x13383pzz
+User ssgconfig 
+
+Host l7portal.prd
+Hostname x13463pzz
+User ssgconfig 
+
+
+##############################################################################
 # SESAM 3
 # ############################################################################
 
@@ -203,11 +240,11 @@ Hostname x13083azz
 User appadm
 
 Host snp1.prd
-Hostname x13082pzz
+Hostname x13081pzz
 User appadm
 
 Host snp2.prd
-Hostname x13081pzz
+Hostname x13082pzz
 User appadm
 
 ##############################################################################
@@ -252,6 +289,39 @@ User appadm
 
 Host binks2.prd
 Hostname x13295pzz
+User appadm
+
+##############################################################################
+# NSA
+##############################################################################
+
+Host nsa.bt1
+Hostname x12829tzz
+User appadm
+
+Host nsa1.nr
+Hostname x12832azz
+User appadm
+
+Host nsa2.nr
+Hostname x12833azz
+User appadm
+
+Host nsa3.nr
+Hostname x12908azz
+User appadm
+
+Host nsa1.prd
+Hostname x12834pzz
+User appadm
+
+Host nsa2.prd
+Hostname x12835pzz
+User appadm
+
+Host nsa3.prd
+Hostname x12909pzz
+User appadm
 
 ##############################################################################
 # ATF
