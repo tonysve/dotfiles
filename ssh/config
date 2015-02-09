@@ -75,11 +75,7 @@ Hostname x12435pzz
 # Layer 7
 ##############################################################################
 
-Host l7gw1.bt1
-Hostname x13457tzz
-User ssgconfig 
-
-Host l7gw2.bt1
+Host l7gw.bt1
 Hostname x13458tzz
 User ssgconfig 
 
