@@ -9,7 +9,8 @@ alias grails235='export GRAILS_HOME="/opt/grails-2.3.5"'
 ##Port forwarding
 #DBS
 alias Sesam3DBNXT="ssh -f -N -L 15211:x12013abd-vip:1521 sesam2.nxt"
-alias PSFTNXT="ssh -f -N -L 15411:x12294abd.nextrel.tre.se:1521 smart1.nxt"
+alias PSFTNXT="ssh -f -N -L 15411:x12294abd.nextrel.tre.se:1521 smart1.nr"
+alias PSFTNR="ssh -f -N -L 15411:172.23.194.111:1521 smart1.nr"
 alias BHPR1-SALE_2="ssh -f -N -L 15311:x12021pbd-vip.omaccess.net:1521 smart1.prd"
 alias BHPR1-SALE="ssh -f -N -L 15311:x12020pbd-vip.omaccess.net:1521 smart1.prd"
 alias BHPR2-OTHER_2="ssh -f -N -L 15511:x12022pbd-vip.omaccess.net:1521 smart1.prd"
@@ -37,6 +38,8 @@ alias cdbinks='cd ~/dev/git/binks'
 alias cdnsa='cd ~/dev/git/nsa'
 alias cdobiwan='cd ~/dev/git/obiwan-usage'
 alias cdl7='cd ~/l7'
+alias cdssg='cd ~/dev/git/ssg'
+alias cdgmu='cd ~/dev/git/ssg/gmu'
 alias mci='mvn clean install'
 alias telnet='telnet -e%'
 alias NR='ssh xtonsve@AP_NR-BT.omaccess.net'
@@ -70,13 +73,17 @@ alias tunnelSlog12919='ssh -g -N -f -L 12919:x12919pzz:8080 slog2.prd'
 
 alias tunnelYJP='ssh -g -N -f -L 10001:localhost:10001 binks1.prd'
 
-alias tunnelL7NRGW1='ssh -g -N -f -L 40001:x13384azz:8443 l7gw1.nr'
-alias tunnelL7NRGW2='ssh -g -N -f -L 40002:x13385azz:8443 l7gw2.nr'
-alias tunnelL7PRDGW1='ssh -g -N -f -L 50001:x13459pzz:8443 l7gw1.prd'
-alias tunnelL7PRDGW2='ssh -g -N -f -L 50002:x13460pzz:8443 l7gw2.prd'
-alias tunnelL7ESM='ssh -g -N -f -L 41000:x13383pzz:8443 l7esm.prd'
-alias tunnelL7PORTAL='ssh -g -N -f -L 51000:x13463pzz:8443 l7portal.prd'
+alias tunnelL7BT1GW='ssh -o ServerAliveInterval=100 -g -N -f -L 30001:x13458tzz:8443 l7gw.bt1'
+alias tunnelL7NRGW1='ssh -o ServerAliveInterval=100 -g -N -f -L 40001:x13384azz:8443 l7gw1.nr'
+alias tunnelL7NRGW2='ssh -o ServerAliveInterval=100 -g -N -f -L 40002:x13385azz:8443 l7gw2.nr'
+alias tunnelL7PRDGW1='ssh -o ServerAliveInterval=100 -g -N -f -L 50001:x13459pzz:8443 l7gw1.prd'
+alias tunnelL7PRDGW2='ssh -o ServerAliveInterval=100 -g -N -f -L 50002:x13460pzz:8443 l7gw2.prd'
+alias tunnelL7ESM='ssh -o ServerAliveInterval=100 -g -N -f -L 41000:x13383pzz:8443 l7esm.prd'
+alias tunnelL7PORTAL='ssh -o ServerAliveInterval=100 -g -N -f -L 51000:x13463pzz:80 l7portal.prd'
 
 alias tunnelNSA_Prod='ssh -g -N -f -L 8248:172.28.64.64:8248 smart1.prd'
 
-alias policyManager='/Users/tonysvedlund/policyManager.sh'
+#alias policyManager='/Users/tonysvedlund/policyManager.sh'
+alias policyManager='~/policyManager.sh'
+alias policyManager8201='~/policyManager8.2.01.sh'
+alias l7tunnels='~/l7tunnels.sh'

@@ -136,13 +136,15 @@ Hostname x12561pzz
 ##############################################################################
 
 Host smart1.bt1
-Hostname x1833tzz
+Hostname x12596tzz
 
 Host smart1.nr
-Hostname x1935azz
+#Hostname x1935azz
+Hostname x13108azz
 
 Host smart2.nr
-Hostname x1936azz
+#Hostname x1936azz
+Hostname x13106azz
 
 Host smart1.prd
 #Hostname x1912pzz
@@ -261,6 +263,18 @@ User appadm
 
 Host osp2.prd
 Hostname x13114pzz
+User appadm
+
+##############################################################################
+# Store Proxy 
+##############################################################################
+
+Host storeproxy1.prd
+Hostname x13677pzz
+User appadm
+
+Host storeproxy2.prd
+Hostname x13678pzz
 User appadm
 
 ##############################################################################
@@ -390,10 +404,10 @@ Host *.prd
 ProxyCommand ssh -2 -W %h:%p prd
 
 Host *.nextrel.tre.se *.nxt
-ProxyCommand ssh -2 -W %h:%p nxt
+ProxyCommand ssh -o ServerAliveInterval=100 -2 -W %h:%p nxt
 
 Host *.nextrel.tre.se *.nr
-ProxyCommand ssh -2 -W %h:%p nr
+ProxyCommand ssh -o ServerAliveInterval=100 -2 -W %h:%p nr
 
 ##############################################################################
 # Defaults
@@ -402,5 +416,6 @@ ProxyCommand ssh -2 -W %h:%p nr
 Host *
 User appadm
 ExitOnForwardFailure yes
+ServerAliveInterval 100
 
 #EOF

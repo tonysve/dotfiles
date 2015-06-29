@@ -44,7 +44,7 @@ COMPLETION_WAITING_DOTS="false"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git lein gradle colored-man zsh-syntax-highlighting sublime)
+plugins=(git brew-cask gradle grails lein osx vagrant zsh_reload colored-man zsh-syntax-highlighting sublime brew chucknorris sudo)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.bash_aliases
@@ -65,16 +65,20 @@ function setjdk() {
    fi  
    export JAVA_HOME=`/usr/libexec/java_home -v $@`  
    export PATH=$JAVA_HOME/bin:$PATH  
+  else
+    /usr/libexec/java_home --verbose
   fi  
  }  
  function removeFromPath() {  
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")  
  }
+
 setjdk 1.8
 
+#/usr/bin/xmodmap ~/.Xmodmap
 
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/tonysvedlund/.gvm/bin/gvm-init.sh" ]] && source "/Users/tonysvedlund/.gvm/bin/gvm-init.sh"
-
-#/usr/bin/xmodmap ~/.Xmodmap
+#[[ -s "/Users/tonysvedlund/.gvm/bin/gvm-init.sh" ]] && source "/Users/tonysvedlund/.gvm/bin/gvm-init.sh"
+[[ -s "/Users/xtonsve/.gvm/bin/gvm-init.sh" ]] && source "/Users/xtonsve/.gvm/bin/gvm-init.sh"
