@@ -15,8 +15,12 @@ alias BHPR1-SALE_2="ssh -f -N -L 15311:x12021pbd-vip.omaccess.net:1521 smart1.pr
 alias BHPR1-SALE="ssh -f -N -L 15311:x12020pbd-vip.omaccess.net:1521 smart1.prd"
 alias BHPR2-OTHER_2="ssh -f -N -L 15511:x12022pbd-vip.omaccess.net:1521 smart1.prd"
 alias BHPR2-OTHER="ssh -f -N -L 15511:x12023pbd-vip.omaccess.net:1521 smart1.prd"
-alias BHAR1="ssh -f -N -L 15711:x12010abd-vip.nextrel.tre.se:1521 smart1.nr"
-alias BHAR1_2="ssh -f -N -L 15711:x12011abd-vip.nextrel.tre.se:1521 smart1.nr"
+
+#alias BHAR1="ssh -f -N -L 15711:x12010abd-vip.nextrel.tre.se:1521 smart1.nr"
+#alias BHAR1_2="ssh -f -N -L 15711:x12011abd-vip.nextrel.tre.se:1521 smart1.nr"
+alias BHAR1="ssh -f -N -L 15711:x13744adz-vip.nextrel.tre.se:1521 smart1.nr"
+alias BHAR1_2="ssh -f -N -L 15711:x13747adz-vip.nextrel.tre.se:1521 smart1.nr"
+
 alias BHAR2="ssh -f -N -L 15611:x12012abd-vip.nextrel.tre.se:1521 smart1.nr"
 alias BHAR2_2="ssh -f -N -L 15611:x12013abd-vip.nextrel.tre.se:1521 smart1.nr"
 alias SAS_CAMPAIGN="ssh -f -N -L 15811:x12473pbd.omaccess.net:1521 3is1.prd"

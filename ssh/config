@@ -72,7 +72,7 @@ Host gaf2.prd
 Hostname x12435pzz
 
 ##############################################################################
-# Layer 7
+# Layer 7 (SSG)
 ##############################################################################
 
 Host l7gw.bt1
@@ -102,6 +102,21 @@ User ssgconfig
 Host l7portal.prd
 Hostname x13463pzz
 User ssgconfig 
+
+Host sonia.bt1
+Hostname x13729tzz
+
+Host sonia1.nr
+Hostname x13727azz
+
+Host sonia2.nr
+Hostname x13732azz
+
+Host sonia1.prd
+Hostname x13745pzz
+
+Host sonia2.prd
+Hostname x13746pzz
 
 
 ##############################################################################
@@ -196,6 +211,21 @@ Hostname x12059pzz
 
 Host tds.prd
 Hostname x12620pzz
+
+Host onlineadmin.prd
+Hostname x13507pzz
+
+Host onlineadmin.nr
+Hostname x13043azz
+
+Host kibana.prd
+Hostname x12984pzz
+
+Host kibana.nr
+Hostname x13690azz
+
+Host tsdb.prd
+Hostname x12870pzz
 
 ##############################################################################
 # 3IS
