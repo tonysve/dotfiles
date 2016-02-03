@@ -11,6 +11,7 @@ alias grails235='export GRAILS_HOME="/opt/grails-2.3.5"'
 alias Sesam3DBNXT="ssh -f -N -L 15211:x12013abd-vip:1521 sesam2.nxt"
 alias PSFTNXT="ssh -f -N -L 15411:x12294abd.nextrel.tre.se:1521 smart1.nr"
 alias PSFTNR="ssh -f -N -L 15411:172.23.194.111:1521 smart1.nr"
+alias PSFTPRD="ssh -f -N -L 15399:PSOFTP02.omaccess.net:1521 smart1.prd"
 alias BHPR1-SALE_2="ssh -f -N -L 15311:x12021pbd-vip.omaccess.net:1521 smart1.prd"
 alias BHPR1-SALE="ssh -f -N -L 15311:x12020pbd-vip.omaccess.net:1521 smart1.prd"
 alias BHPR2-OTHER_2="ssh -f -N -L 15511:x12022pbd-vip.omaccess.net:1521 smart1.prd"
@@ -87,7 +88,10 @@ alias tunnelL7PORTAL='ssh -o ServerAliveInterval=100 -g -N -f -L 51000:x13463pzz
 
 alias tunnelNSA_Prod='ssh -g -N -f -L 8248:172.28.64.64:8248 smart1.prd'
 
+alias tunnelTSDB_NR='ssh -g -N -f -L 4242:x13043azz:4242 onlineadmin.nr'
+
 #alias policyManager='/Users/tonysvedlund/policyManager.sh'
 alias policyManager='~/policyManager.sh'
+alias policyManager9='~/policyManager9.sh'
 alias policyManager8201='~/policyManager8.2.01.sh'
 alias l7tunnels='~/l7tunnels.sh'

@@ -55,7 +55,7 @@ alias c="clear"
 
 # Customize to your needs...
 #export PATH=$PATH:/home/xtonsve/activator-1.2.3
-export PATH=$PATH:/Users/tonysvedlund/dev/activator-1.2.10-minimal
+#export PATH=$PATH:/Users/xtonsve/dev/activator-1.2.10-minimal
 
 function setjdk() {  
   if [ $# -ne 0 ]; then  
@@ -79,6 +79,6 @@ setjdk 1.8
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-#[[ -s "/Users/tonysvedlund/.gvm/bin/gvm-init.sh" ]] && source "/Users/tonysvedlund/.gvm/bin/gvm-init.sh"
-[[ -s "/Users/xtonsve/.gvm/bin/gvm-init.sh" ]] && source "/Users/xtonsve/.gvm/bin/gvm-init.sh"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/xtonsve/.sdkman"
+[[ -s "/Users/xtonsve/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/xtonsve/.sdkman/bin/sdkman-init.sh"
