@@ -92,6 +92,6 @@ alias tunnelTSDB_NR='ssh -g -N -f -L 4242:x13043azz:4242 onlineadmin.nr'
 
 #alias policyManager='/Users/tonysvedlund/policyManager.sh'
 alias policyManager='~/policyManager.sh'
-alias policyManager9='~/policyManager9.sh'
+alias policyManager8='~/policyManager8.sh'
 alias policyManager8201='~/policyManager8.2.01.sh'
 alias l7tunnels='~/l7tunnels.sh'

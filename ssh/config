@@ -118,6 +118,21 @@ Hostname x13745pzz
 Host sonia2.prd
 Hostname x13746pzz
 
+Host ssgproxy.bt1
+Hostname x13815tzz
+
+Host ssgproxy1.nr
+Hostname x13816azz
+
+Host ssgproxy2.nr
+Hostname x13817azz
+
+Host ssgproxy1.prd
+Hostname x13818pzz
+
+Host ssgproxy2.prd
+Hostname x13820pzz
+
 
 ##############################################################################
 # SESAM 3
